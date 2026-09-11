@@ -13,7 +13,7 @@ public class sum {
         //LOWER MATRIX
         for(int i=0;i<n;i++){
             for(int j=0;j<=i;j++){
-                sum+=sum+matrix[i][j];
+                sum=sum+matrix[i][j];
             }
         }
         System.out.println(sum);
