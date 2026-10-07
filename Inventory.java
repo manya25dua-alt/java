@@ -1,5 +1,5 @@
 import java.util.LinkedHashMap;
-
+import java.util.Map;
 public class Inventory{
     public static void main(String args[]){
         LinkedHashMap<Integer,Integer> inventory= new LinkedHashMap<>();
@@ -29,7 +29,7 @@ public class Inventory{
             }
         }
         System.out.println("After update/removal: " + inventory);
-        System.out.println("Highest Stock Product: " + highestProduct + " (" + highestStock + " units)");
+        System.out.println("Highest Stock Product: " + highest_product + " (" + highest_stock + " units)");
 
        
 
