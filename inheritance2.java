@@ -37,16 +37,28 @@ class PartTime extends Employee{
 public class inheritance2 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        FullTime f = new FullTime("Manya", 101, 50000, 2000);
+        int type=sc.nextInt();
+        String name=sc.nextLine();
+        int id=sc.nextInt();
 
-System.out.println("Name: " + f.name);
-System.out.println("ID: " + f.id);
-System.out.println("Salary: " + f.salary());
+        if(type==1){
+            double bonus=sc.nextDouble();
+            double salary=sc.nextDouble();
+            FullTime f=new FullTime(name,id,salary, bonus);
+            System.out.println("name "+f.name);
+            System.out.println("id "+f.id);
+            System.out.println("Total Salary "+f.salary());
+        } else if (type == 2) {
+            int hours = sc.nextInt(id);
+            int hourly_rate = sc.nextInt();
 
-PartTime p = new PartTime("Manya", 101, 5, 5000);
+            PartTime emp =
+                new PartTime(name, id, hours, hourly_rate);
 
-System.out.println("Name: " + p.name);
-System.out.println("ID: " + p.id);
-System.out.println("Salary: " + p.salary());
+            System.out.println("Employee Name: " + emp.name);
+            System.out.println("Employee ID: " + emp.id);
+            System.out.println("Salary: " + emp.salary());
+        }
+
     }
 }
