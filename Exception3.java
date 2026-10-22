@@ -2,7 +2,7 @@ import java.util.Scanner;
 class AgeException extends Exception{
 
 }
-public class AgeValidator {
+public class Exception3 {
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
         int age=sc.nextInt();
