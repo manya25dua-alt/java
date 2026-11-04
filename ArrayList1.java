@@ -12,6 +12,9 @@ public class ArrayList1{
         System.out.println(arr);
         arr.remove(2);
         System.out.println(arr);
+        Collections.sort(arr);
+        Collections.reverse(arr);
+        System.out.println(arr);
 
 
         LinkedList<Integer> list1=new LinkedList<Integer>();
